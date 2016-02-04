@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <main class="container">
-      <h1>The Russian Blues Kitten Application</h1>
+  <h1 class="header-title">The Russian Blues Kitten Application</h1>
+    <main class="container well">
       <p>The whole form MUST be filled out to be consider for a kitten.</p>
       <form action="index.html" method="post">
           <div class="row">
@@ -30,11 +30,87 @@
            <label for="email">Email Address:</label>
            <input class="form-control" type="email" name="email" placeholder="Email">
          </section>
+
          <section class="form-group">
-           <label for="question1">Including yourself please list all family member and their ages.</label>
-           <input class="form-control" type="textarea" name="question1" placeholder="Including yourself please list all family member and their ages.">
+            <label for="question1">Including yourself please list all family member and their ages.</label>
+            <textarea class="form-control" type="textarea" name="question1"></textarea>
+          </section>
+
+         <section class="form-group">
+           <label for="question2">Home:</label>
+           <br />
+           <input type="radio" name="question2" value="own"> Own<br>
+           <input type="radio" name="question2" value="rent"> Rent
          </section>
 
+         <section class="form-group">
+           <label for="question3">If renting do you have permission from your landlord to have a pet?</label>
+           <br />
+           <input type="radio" name="question3" value="yes"> Yes<br>
+           <input type="radio" name="question3" value="no"> No
+         </section>
+
+
+         <section class="form-group">
+           <label for="question4">Does anyone in your family have allergies?</label>
+           <br />
+           <input type="radio" name="question4" value="yes"> Yes<br>
+           <input type="radio" name="question4" value="no"> No
+         </section>
+
+         <section class="form-group">
+           <label for="question5">Will this kitten be kept as indoor only?</label>
+           <br />
+           <input type="radio" name="question5" value="yes"> Yes<br>
+           <input type="radio" name="question5" value="no"> No
+         </section>
+
+         <section class="form-group">
+           <label for="question6">Which sex do you prefer?</label>
+           <br />
+           <input type="radio" name="question5" value="male"> Male<br>
+           <input type="radio" name="question5" value="female"> Female
+         </section>
+
+         <section class="form-group">
+            <label for="question7">List any other animals in the home.</label>
+            <textarea class="form-control" type="textarea" name="question7"></textarea>
+          </section>
+
+          <section class="form-group">
+             <label for="question8"> How many hours a day on average will the kitten be left alone?</label>
+             <textarea class="form-control" type="textarea" name="question8"></textarea>
+           </section>
+
+           <section class="form-group">
+             <label for="question9">Have you read our contract/health guarantee?</label>
+             <br />
+             <input type="radio" name="question9" value="yes"> Yes<br>
+             <input type="radio" name="question9" value="no"> No
+           </section>
+
+           <section class="form-group">
+             <label for="question6">Are you willing to abide by the Contract/health guarantee?</label>
+             <br />
+             <input type="radio" name="question10" value="yes"> Yes<br>
+             <input type="radio" name="question10" value="no"> No
+           </section>
+
+           <section class="form-group">
+             <label for="question6">Have you ever relinquished an animal to the pound or animal shelter?</label>
+             <br />
+             <input type="radio" name="question11" value="yes"> Yes<br>
+             <input type="radio" name="question11" value="no"> No
+           </section>
+
+           <section class="form-group">
+              <label for="question12">Please tell us any other information that you feel may be helpful in the approval process of your application.</label>
+              <textarea class="form-control" type="textarea" name="question12"></textarea>
+            </section>
+
+            <section>
+              <input class="btn btn-success btn-lg" type="submit" name="submit" value="Submit Application">
+            </section>
       </form>
 
       <aside class="text-center">
