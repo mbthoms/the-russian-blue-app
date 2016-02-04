@@ -1,0 +1,21 @@
+/*body {
+  background-color: lightgrey;
+}*/
+
+.container {
+  background-color: white;
+}
+h1 {
+  text-align: center;
+}
+
+/*Footer Styles*/
+footer {
+  text-align: center;
+  border-top: 2px solid lightgrey;
+  padding: 10px
+}
+
+form {
+  text-align: center;
+}
