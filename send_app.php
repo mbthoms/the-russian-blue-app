@@ -118,29 +118,53 @@
       // Emailing Varibles.
       $email_to = "matthewthomsmedia@gmail.com";
       $subject_line = "New Kitten Application From: $first_name $last_name";
-      $email_message = "You have received a new New Kitten Application from Online Form. \n\n ".
-            "Here is the following Information that was submitted:\n\n ".
-            "Name: $first_name $last_name \n\n ".
-    		    "Phone Number: $phone \n\n ".
-            "Email: $email \n\n ".
-            "1. Including yourself please list all family members and their ages:\n\n $question1 \n\n ".
-            "2. Do you rent or own your home?: \n\n $question2  \n\n ".
-            "3. If renting do you have permission from your landlord to have a pet? \n\n $question3  \n\n ".
-            "4. Does anyone in your family have allergies? \n\n $question4  \n\n ".
-            "5. Will this kitten be kept as indoor only? \n\n $question5  \n\n ".
-            "6. Which sex do you prefer? \n\n $question6  \n\n ".
-            "7. List any other animals in the home. \n\n $question7  \n\n ".
-            "8. How many hours a day on average will the kitten be left alone? \n\n $question8  \n\n ".
-            "9. Have you read our contract/health guarantee? \n\n $question9  \n\n ".
-            "10. Are you willing to abide by the Contract/health guarantee? \n\n $question10 \n\n ".
-            "11. Have you ever relinquished an animal to the pound or animal shelter? \n\n $question11  \n\n ".
-            "12. Please tell us any other information that you feel may be helpful in the approval process of your application. \n\n $question12  \n\n ".
+      $email_message = "
+      <html>
+      <head>
+      <title>Kitten Application</title>
+      </head>
+      <body>
+      <h1>Kitten Application</h1>
+            <p>You have received a new New Kitten Application from Online Form.<br><br>
+            Here is the following Information that was submitted:<br><br>
+            <b>Name:</b> $first_name $last_name <br><br>
+    		    <b>Phone Number:</b> $phone <br><br>
+            <b>Email:</b> $email <br><br>
+            <ol>
+            <li><b>Including yourself please list all family members and their ages:</b><br> $question1</li><br>
+            <li><b>Do you rent or own your home?:</b><br> $question2</li><br>
+            <li><b>If renting do you have permission from your landlord to have a pet?</b><br>$question3</li><br>
+            <li><b>Does anyone in your family have allergies?</b><br>$question4</li><br>
+            <li><b>Will this kitten be kept as indoor only?</b><br>$question5</li><br>
+            <li><b>Which sex do you prefer?</b><br>$question6</li><br>
+            <li><b>List any other animals in the home.</b><br> $question7</li><br>
+            <li><b>How many hours a day on average will the kitten be left alone?</b><br> $question8</li><br>
+            <li><b>Have you read our contract/health guarantee?</b><br> $question9</li><br>
+            <li><b>Are you willing to abide by the Contract/health guarantee?</b><br> $question10 </li><br>
+            <li><b>Have you ever relinquished an animal to the pound or animal shelter?</b><br> $question11</li><br>
+            <li><b>Please tell us any other information that you feel may be helpful in the approval process of your application.</b><br>$question12</li><br>
+            </ol>
+      </body>
+      </html>".
 
-      $headers = "From: $email";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
       mail($email_to,$subject_line,$email_message,$headers);
-      echo "<h2>We have receive your message, we will get back to you as quick as we can.<br />
-        Thank-you.</h2>";
+      echo "<h2>We have received your application.<br />
+        Thank-you.</h2>
+        <br>
+        <br>
+
+        <a href=\"http://therussianblues.com\">Go back to Home Page.</a>
+        <br>
+        <br>
+        <footer>
+                Copyright &copy;
+                <!--Looking up current year and displaying it.-->
+                <script type=\"text/javascript\">var year = new Date();document.write(year.getFullYear());</script>
+                <a href=\"http://therussianblues.com\">The Russain Blues</a>
+            </footer>
+        ";
     }
 
      ?>

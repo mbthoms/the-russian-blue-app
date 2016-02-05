@@ -15,7 +15,7 @@
       <h1 class="header-title">Kitten Application</h1>
       <p>This form must be filled out <strong>COMPELELY</strong> to be consided for a kitten.</p>
       <!-- The app form -->
-      <form action="index.html" method="post">
+      <form action="send_app.php" method="post">
           <div class="row">
 
             <!-- First Name -->
@@ -53,40 +53,40 @@
          <section class="form-group">
            <label for="question2">2. Do you rent or own your home?</label>
            <br />
-           <input type="radio" name="question2" value="rent"> Rent<br>
-           <input type="radio" name="question2" value="own"> Own
+           <input type="radio" name="question2" value="Rent"> Rent<br>
+           <input type="radio" name="question2" value="Own"> Own
          </section>
 
          <!-- Question 3 -->
          <section class="form-group">
            <label for="question3">3. If renting do you have permission from your landlord to have a pet?</label>
            <br />
-           <input type="radio" name="question3" value="yes"> Yes<br>
-           <input type="radio" name="question3" value="no"> No
+           <input type="radio" name="question3" value="Yes"> Yes<br>
+           <input type="radio" name="question3" value="No"> No
          </section>
 
          <!-- Question 4 -->
          <section class="form-group">
            <label for="question4">4. Does anyone in your family have allergies?</label>
            <br />
-           <input type="radio" name="question4" value="yes"> Yes<br>
-           <input type="radio" name="question4" value="no"> No
+           <input type="radio" name="question4" value="Yes"> Yes<br>
+           <input type="radio" name="question4" value="No"> No
          </section>
 
          <!-- Question 5 -->
          <section class="form-group">
            <label for="question5">5. Will this kitten be kept as indoor only?</label>
            <br />
-           <input type="radio" name="question5" value="yes"> Yes<br>
-           <input type="radio" name="question5" value="no"> No
+           <input type="radio" name="question5" value="Yes"> Yes<br>
+           <input type="radio" name="question5" value="No"> No
          </section>
 
          <!-- Question 6 -->
          <section class="form-group">
            <label for="question6">6. Which sex do you prefer?</label>
            <br />
-           <input type="radio" name="question5" value="male"> Male<br>
-           <input type="radio" name="question5" value="female"> Female
+           <input type="radio" name="question6" value="Male"> Male<br>
+           <input type="radio" name="question6" value="Female"> Female
          </section>
 
          <!-- Question 7 -->
@@ -105,24 +105,24 @@
            <section class="form-group">
              <label for="question9">9. Have you read our contract/health guarantee?</label>
              <br />
-             <input type="radio" name="question9" value="yes"> Yes<br>
-             <input type="radio" name="question9" value="no"> No
+             <input type="radio" name="question9" value="Yes"> Yes<br>
+             <input type="radio" name="question9" value="No"> No
            </section>
 
            <!-- Question 10 -->
            <section class="form-group">
              <label for="question6">10. Are you willing to abide by the Contract/health guarantee?</label>
              <br />
-             <input type="radio" name="question10" value="yes"> Yes<br>
-             <input type="radio" name="question10" value="no"> No
+             <input type="radio" name="question10" value="Yes"> Yes<br>
+             <input type="radio" name="question10" value="No"> No
            </section>
 
            <!-- Question 11 -->
            <section class="form-group">
              <label for="question6">11. Have you ever relinquished an animal to the pound or animal shelter?</label>
              <br />
-             <input type="radio" name="question11" value="yes"> Yes<br>
-             <input type="radio" name="question11" value="no"> No
+             <input type="radio" name="question11" value="Yes"> Yes<br>
+             <input type="radio" name="question11" value="No"> No
            </section>
 
            <!-- Question 12 -->
