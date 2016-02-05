@@ -13,7 +13,7 @@
 
     <main class="container well well-background">
       <h1 class="header-title">Kitten Application</h1>
-      <p>This form must be filled out <strong>COMPELELY</strong> to be consided for a kitten.</p>
+      <p>This form must be filled out <strong>COMPLETELY</strong> to be consided for a kitten.</p>
       <!-- The app form -->
       <form action="send_app.php" method="post">
           <div class="row">

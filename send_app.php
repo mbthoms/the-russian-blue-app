@@ -59,64 +59,64 @@
     }
 
     if(empty($question2)) {
-      echo 'You must provide an awesome to question 2.<br/>';
+      echo 'You must provide an answer to question 2.<br/>';
       $complete = false;
     }
 
     if(empty($question3)) {
-      echo 'You must provide an awesome to question 3.<br/>';
+      echo 'You must provide an answer to question 3.<br/>';
       $complete = false;
     }
 
     if(empty($question4)) {
-      echo 'You must provide an awesome to question 4.<br/>';
+      echo 'You must provide an answer to question 4.<br/>';
       $complete = false;
     }
 
     if(empty($question5)) {
-      echo 'You must provide an awesome to question 5.<br/>';
+      echo 'You must provide an answer to question 5.<br/>';
       $complete = false;
     }
 
     if(empty($question6)) {
-      echo 'You must provide an awesome to question 6.<br/>';
+      echo 'You must provide an answer to question 6.<br/>';
       $complete = false;
     }
 
     if(empty($question7)) {
-      echo 'You must provide an awesome to question 7.<br/>';
+      echo 'You must provide an answer to question 7.<br/>';
       $complete = false;
     }
 
     if(empty($question8)) {
-      echo 'You must provide an awesome to question 8.<br/>';
+      echo 'You must provide an answer  to question 8.<br/>';
       $complete = false;
     }
 
     if(empty($question9)) {
-      echo 'You must provide an awesome to question 9.<br/>';
+      echo 'You must provide an answer to question 9.<br/>';
       $complete = false;
     }
 
     if(empty($question10)) {
-      echo 'You must provide an awesome to question 10.<br/>';
+      echo 'You must provide an answer to question 10.<br/>';
       $complete = false;
     }
 
     if(empty($question11)) {
-      echo 'You must provide an awesome to question 11.<br/>';
+      echo 'You must provide an answer to question 11.<br/>';
       $complete = false;
     }
 
     if(empty($question12)) {
-      echo 'You must provide an awesome to question 12.<br/>';
+      echo 'You must provide an answer to question 12.<br/>';
       $complete = false;
     }
 
     // if the form is filled out correctly then send the email with the form content.
     if ($complete == true) {
       // Emailing Varibles.
-      $email_to = "matthewthomsmedia@gmail.com";
+      $email_to = "therussianblues@yahoo.ca";
       $subject_line = "New Kitten Application From: $first_name $last_name";
       $email_message = "
       <html>
