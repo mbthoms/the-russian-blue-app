@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>The Russian Blues Kitten Application</title>
+    <!-- Making sure that the pages scale to a mobile friendly veiw. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
@@ -10,8 +12,8 @@
   <body>
 
     <main class="container well well-background">
-      <h1 class="header-title">The Russian Blues Kitten Application</h1>
-      <p>The whole form <strong>MUST</strong> be filled out to be consider for a kitten.</p>
+      <h1 class="header-title">Kitten Application</h1>
+      <p>This form must be filled out <strong>COMPELELY</strong> to be consided for a kitten.</p>
       <!-- The app form -->
       <form action="index.html" method="post">
           <div class="row">
@@ -43,21 +45,21 @@
 
          <!-- Question 1 -->
          <section class="form-group">
-            <label for="question1">Including yourself please list all family member and their ages.</label>
+            <label for="question1">1. Including yourself please list all family members and their ages.</label>
             <textarea class="form-control" type="textarea" name="question1"></textarea>
           </section>
 
           <!-- Question 2 -->
          <section class="form-group">
-           <label for="question2">Home:</label>
+           <label for="question2">2. Do you rent or own your home?</label>
            <br />
-           <input type="radio" name="question2" value="own"> Own<br>
-           <input type="radio" name="question2" value="rent"> Rent
+           <input type="radio" name="question2" value="rent"> Rent<br>
+           <input type="radio" name="question2" value="own"> Own
          </section>
 
          <!-- Question 3 -->
          <section class="form-group">
-           <label for="question3">If renting do you have permission from your landlord to have a pet?</label>
+           <label for="question3">3. If renting do you have permission from your landlord to have a pet?</label>
            <br />
            <input type="radio" name="question3" value="yes"> Yes<br>
            <input type="radio" name="question3" value="no"> No
@@ -65,7 +67,7 @@
 
          <!-- Question 4 -->
          <section class="form-group">
-           <label for="question4">Does anyone in your family have allergies?</label>
+           <label for="question4">4. Does anyone in your family have allergies?</label>
            <br />
            <input type="radio" name="question4" value="yes"> Yes<br>
            <input type="radio" name="question4" value="no"> No
@@ -73,7 +75,7 @@
 
          <!-- Question 5 -->
          <section class="form-group">
-           <label for="question5">Will this kitten be kept as indoor only?</label>
+           <label for="question5">5. Will this kitten be kept as indoor only?</label>
            <br />
            <input type="radio" name="question5" value="yes"> Yes<br>
            <input type="radio" name="question5" value="no"> No
@@ -81,7 +83,7 @@
 
          <!-- Question 6 -->
          <section class="form-group">
-           <label for="question6">Which sex do you prefer?</label>
+           <label for="question6">6. Which sex do you prefer?</label>
            <br />
            <input type="radio" name="question5" value="male"> Male<br>
            <input type="radio" name="question5" value="female"> Female
@@ -89,19 +91,19 @@
 
          <!-- Question 7 -->
          <section class="form-group">
-            <label for="question7">List any other animals in the home.</label>
+            <label for="question7">7. List any other animals in the home.</label>
             <textarea class="form-control" type="textarea" name="question7"></textarea>
           </section>
 
           <!-- Question 8 -->
           <section class="form-group">
-             <label for="question8"> How many hours a day on average will the kitten be left alone?</label>
+             <label for="question8">8. How many hours a day on average will the kitten be left alone?</label>
              <textarea class="form-control" type="textarea" name="question8"></textarea>
            </section>
 
            <!-- Question 9 -->
            <section class="form-group">
-             <label for="question9">Have you read our contract/health guarantee?</label>
+             <label for="question9">9. Have you read our contract/health guarantee?</label>
              <br />
              <input type="radio" name="question9" value="yes"> Yes<br>
              <input type="radio" name="question9" value="no"> No
@@ -109,7 +111,7 @@
 
            <!-- Question 10 -->
            <section class="form-group">
-             <label for="question6">Are you willing to abide by the Contract/health guarantee?</label>
+             <label for="question6">10. Are you willing to abide by the Contract/health guarantee?</label>
              <br />
              <input type="radio" name="question10" value="yes"> Yes<br>
              <input type="radio" name="question10" value="no"> No
@@ -117,7 +119,7 @@
 
            <!-- Question 11 -->
            <section class="form-group">
-             <label for="question6">Have you ever relinquished an animal to the pound or animal shelter?</label>
+             <label for="question6">11. Have you ever relinquished an animal to the pound or animal shelter?</label>
              <br />
              <input type="radio" name="question11" value="yes"> Yes<br>
              <input type="radio" name="question11" value="no"> No
@@ -125,7 +127,7 @@
 
            <!-- Question 12 -->
            <section class="form-group">
-              <label for="question12">Please tell us any other information that you feel may be helpful in the approval process of your application.</label>
+              <label for="question12">12. Please tell us any other information that you feel may be helpful in the approval process of your application.</label>
               <textarea class="form-control" type="textarea" name="question12"></textarea>
             </section>
 
