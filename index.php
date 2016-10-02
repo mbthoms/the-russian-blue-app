@@ -31,6 +31,34 @@
           </section>
          </div><!-- End of Row -->
 
+         <!-- Address -->
+         <section class="form-group">
+           <!-- Address Line 1 -->
+                   <label class="control-label">Address</label>
+                   <input id="address-line1" name="address-line1" type="text" placeholder="Address" class="form-control">
+                       <p class="help-block">Street Address</p>
+
+                  <section class="row">
+                    <section class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- City -->
+                         <label class="control-label">City / Town</label>
+                         <input id="city" name="city" type="text" placeholder="City / Town" class="form-control">
+                            <!-- <p class="help-block"></p> -->
+                    </section>
+                    <section class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- Region -->
+                         <label class="control-label">Province</label>
+                         <input id="region" name="region" type="text" placeholder="Province" class="form-control">
+                             <!-- <p class="help-block"></p> -->
+                    </section>
+                    <section class="col-sm-12 col-md-4 col-lg-4">
+                        <!-- Postal Code/Zip Code-->
+                         <label class="control-label">Postal Code</label>
+                         <input id="postal-code" name="postal-code" type="text" placeholder="Postal Code" class="form-control">
+                             <!-- <p class="help-block"></p> -->
+                    </section>
+                  </section>
+
          <!-- Phone number -->
          <section class="form-group">
            <label for="phone">Phone Number:</label>
@@ -71,6 +99,13 @@
            <br />
            <input type="radio" name="question4" value="Yes"> Yes<br>
            <input type="radio" name="question4" value="No"> No
+         </section>
+
+        <!-- Question 4 a) -->
+         <section class="form-group">
+           <label for="question4a">4. a) If so please explain.</label>
+           <br />
+           <input class="form-control" type="text" name="question4a">
          </section>
 
          <!-- Question 5 -->
@@ -146,8 +181,18 @@
             Copyright &copy;
             <!--Looking up current year and displaying it.-->
             <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>
-            <a href="http://therussianblues.com">The Russain Blues</a>
+            <a href="http://matthewthoms.com">Matthew Thoms Media</a>
         </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73366429-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 
   <!-- Latest compiled and minified JavaScript -->

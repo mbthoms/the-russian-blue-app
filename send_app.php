@@ -15,12 +15,17 @@
     //Information from the app.
     $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
+    $address_line_1 = $_POST['address-line1'];
+    $city = $_POST['city'];
+    $region = $_POST['region'];
+    $postal_code = $_POST['postal-code'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $question1 = $_POST['question1'];
     $question2 = $_POST['question2'];
     $question3 = $_POST['question3'];
     $question4 = $_POST['question4'];
+    $question4a = $_POST['question4a'];
     $question5 = $_POST['question5'];
     $question6 = $_POST['question6'];
     $question7 = $_POST['question7'];
@@ -34,27 +39,47 @@
     $complete = true;
 
     if(empty($first_name)) {
-      echo 'A first name is required.<br/>';
+      echo 'First name is required.<br/>';
       $complete = false;
     }
 
     if(empty($last_name)) {
-      echo 'A last name is required.<br/>';
+      echo 'Last name is required.<br/>';
       $complete = false;
     }
 
     if(empty($phone)) {
-      echo 'A phone number is required.<br/>';
+      echo 'Phone number is required.<br/>';
+      $complete = false;
+    }
+
+    if(empty($address_line_1)) {
+      echo 'Address Line 1 is required.<br/>';
+      $complete = false;
+    }
+
+    if(empty($city)) {
+      echo 'City is required.<br/>';
+      $complete = false;
+    }
+
+    if(empty($region)) {
+      echo 'State, Province or Region is required.<br/>';
+      $complete = false;
+    }
+
+    if(empty($postal_code)) {
+      echo 'Postal or zip code is required.<br/>';
       $complete = false;
     }
 
     if(empty($email)) {
-      echo 'An email is required.<br/>';
+      echo 'Email is required.<br/>';
       $complete = false;
     }
 
     if(empty($question1)) {
-      echo 'A first name is required.<br/>';
+      echo 'You must provide an answer to question 1.<br/>';
       $complete = false;
     }
 
@@ -128,6 +153,10 @@
             <p>You have received a new New Kitten Application from Online Form.<br><br>
             Here is the following Information that was submitted:<br><br>
             <b>Name:</b> $first_name $last_name <br><br>
+            <b>Address:</b> $address_line_1 <br><br>
+            <b>City:</b> $city <br><br>
+            <b>Province:</b> $region <br><br>
+            <b>Postal Code:</b> $postal_code <br><br>
     		    <b>Phone Number:</b> $phone <br><br>
             <b>Email:</b> $email <br><br>
             <ol>
@@ -135,6 +164,7 @@
             <li><b>Do you rent or own your home?:</b><br> $question2</li><br>
             <li><b>If renting do you have permission from your landlord to have a pet?</b><br>$question3</li><br>
             <li><b>Does anyone in your family have allergies?</b><br>$question4</li><br>
+            <li><b>If so Explain:</b><br/><br/>$question4a</li><br/>
             <li><b>Will this kitten be kept as indoor only?</b><br>$question5</li><br>
             <li><b>Which sex do you prefer?</b><br>$question6</li><br>
             <li><b>List any other animals in the home.</b><br> $question7</li><br>
@@ -162,7 +192,7 @@
                 Copyright &copy;
                 <!--Looking up current year and displaying it.-->
                 <script type=\"text/javascript\">var year = new Date();document.write(year.getFullYear());</script>
-                <a href=\"http://therussianblues.com\">The Russain Blues</a>
+                <a href=\"http://matthewthoms.com\">Matthew Thoms Media</a>
             </footer>
         ";
     }
